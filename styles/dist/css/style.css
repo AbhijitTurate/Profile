@@ -1,0 +1,314 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #D1E8E2;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  height: 78vh;
+  width: 100%;
+  background-image: url("../../../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 10rem;
+}
+@media (max-width: 1150px) {
+  main {
+    padding: 2.5rem 5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  main {
+    padding: 1.25rem 3.5rem;
+  }
+}
+
+header {
+  align-items: center;
+  background-color: #101211;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* place-content: center; */
+}
+
+.logo {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo h1 {
+  color: #66FCF1;
+}
+
+.logo h1:hover {
+  color: #D1E8E2;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navLinkContainer {
+  /* width: 45%; */
+}
+
+.hamburger {
+  margin-right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem auto;
+  background-color: #FCFCFC;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.navLinks :last-child {
+  margin-right: 2rem;
+}
+
+.navItem {
+  list-style: none;
+  color: #66FCF1;
+}
+
+.navItem:hover {
+  transform: scale(1.1);
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #66FCF1;
+}
+
+.navLink .cta {
+  color: #66FCF1;
+}
+
+.navLink .cta:hover {
+  color: #D1E8E2;
+}
+
+hr {
+  border: 0.1rem solid #66FCF1;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  flex: 1.2;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem;
+}
+
+.intro_heading {
+  color: #66FCF1;
+  font-size: clamp(2rem, 3vw, 5rem);
+  /* font-size: 6rem; */
+  font-weight: 200;
+}
+
+.handwave--image {
+  height: 4rem;
+}
+
+.name {
+  color: #FFCB9A;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.profession {
+  font-size: 2rem;
+  color: #D1E8E2;
+}
+
+.company--name {
+  color: #FFCB9A;
+  font-weight: bold;
+}
+
+.profile_picture {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+
+.profile_picture img {
+  max-width: 100%;
+}
+
+.socialmedia_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.socialmedia_icon {
+  color: #66FCF1;
+}
+
+.fa-brands {
+  color: #D1E8E2;
+  font-size: 4rem;
+}
+
+.fa-brands:hover {
+  color: #66FCF1;
+  transform: scale(1.1);
+}
+
+footer .fa-brands {
+  font-size: 3rem;
+}
+
+.copyrights {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #101211;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5rem;
+}
+@media (max-width: 690px) {
+  .footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer p {
+  justify-content: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 690px) {
+  .mobile_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navLinks :last-child {
+    margin-right: 0rem;
+  }
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    top: 0;
+  }
+  .introduction {
+    gap: 1rem;
+  }
+  .intro_heading {
+    font-size: 3.4rem;
+  }
+  .handwave--image {
+    height: 3.5rem;
+  }
+  .profession {
+    font-size: 2rem;
+  }
+  .profile_picture {
+    display: none;
+  }
+  .navBar.click {
+    flex-direction: column;
+  }
+  .logo.click {
+    display: none;
+  }
+  .bar2.click {
+    opacity: 0;
+  }
+  .bar1.click {
+    transform: translateY(0.8rem) rotate(45deg);
+  }
+  .bar3.click {
+    transform: translateY(-0.8rem) rotate(-45deg);
+  }
+  .navLinks.click {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    padding-bottom: 10vh;
+  }
+}/*# sourceMappingURL=style.css.map */
