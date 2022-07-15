@@ -66,14 +66,17 @@ header {
   width: 100%;
 }
 
-.navLinkContainer {
-  /* width: 45%; */
-}
-
 .hamburger {
   margin-right: 2rem;
   cursor: pointer;
   display: none;
+}
+@media (max-width: 690px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    top: 0;
+  }
 }
 
 .bar {
@@ -184,6 +187,21 @@ hr {
 .profile_picture img {
   max-width: 100%;
 }
+@media (max-width: 2000px) {
+  .profile_picture img {
+    max-width: 95%;
+  }
+}
+@media (max-width: 1150px) {
+  .profile_picture img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .profile_picture img {
+    max-width: 100%;
+  }
+}
 
 .socialmedia_icons {
   display: flex;
@@ -265,11 +283,6 @@ footer .fa-brands {
   }
   .navLinks :last-child {
     margin-right: 0rem;
-  }
-  .hamburger {
-    display: block;
-    margin-left: auto;
-    top: 0;
   }
   .introduction {
     gap: 1rem;
