@@ -2,8 +2,7 @@
 @import 'mixins';
 
 * {
-    margin: 0px;
-    ;
+    margin: 0px;;
     padding: 0px;
     box-sizing: border-box;
     // background-color: $primary-bg-color;
@@ -249,7 +248,7 @@ footer .fa-brands {
 }
 
 .footer {
-    height: 10vh;
+    // height: 10vh;
     width: 100%;
     background-color: $primary-bg-color;
     @include flex-set(row);
